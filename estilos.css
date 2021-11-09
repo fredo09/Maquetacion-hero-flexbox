@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.nav {
+  height: 70px;
+  background: #fff;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  line-height: 70px;
+}
+
+.nav__logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #474747;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.hero__main {
+  background: #e97575;
+}
+
+.hero__container {
+  overflow: hidden;
+  max-width: 1200px;
+  height: calc(100vh - 70px);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__picture {
+  flex: 1;
+  order: 1;
+}
+
+.hero__texts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero__img {
+  width: 100%;
+  display: block;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero__paragraph {
+  color: #fff;
+  margin-bottom: 30px;
+  font-family: 300;
+}
+
+.cta {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 950px) {
+  .nav {
+    height: 100px;
+  }
+
+  .nav__container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hero__container {
+    padding-top: 40px;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    width: 90%;
+  }
+
+  .hero__picture {
+    order: -1;
+  }
+
+  .hero__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .hero__img {
+    max-width: 600px;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+}
